@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Application.css'
 import Aos from 'aos';
+import 'aos/dist/aos.css'
 import { FetchWeather } from '../../Api/FetchWeather';
 
 const Application = () => {
@@ -27,11 +28,12 @@ return (
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyPress={search}
+                data-aos="zoom-in"
             />
         </div>
         {
             weather.main && (
-                <div className="city">
+                <div className="city" data-aos="zoom-in-right">
                     <div className="info">
                         <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="weather icon" />
                     </div>
