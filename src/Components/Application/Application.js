@@ -1,8 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Application.css'
+import Aos from 'aos';
 import { FetchWeather } from '../../Api/FetchWeather';
 
 const Application = () => {
+    useEffect(() =>{
+        Aos.init({duration: 1000})
+    }, [])
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({})
 
