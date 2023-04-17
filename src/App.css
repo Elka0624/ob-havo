@@ -3,3 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+.icon{
+    font-size: 30px;
+    color: rgb(0, 102, 255);
+}
+.icon:hover{
+    color: red;
+}

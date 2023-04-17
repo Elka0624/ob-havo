@@ -3,6 +3,9 @@ import './Application.css'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import { FetchWeather } from '../../Api/FetchWeather';
+import {FiInstagram} from 'react-icons/fi'
+import {FaTelegramPlane} from 'react-icons/fa'
+import {AiOutlinePhone} from 'react-icons/ai'
 
 const Application = () => {
     useEffect(() =>{
@@ -50,6 +53,18 @@ return (
                     </div>
                 </div>
         )}
+
+        <div className="footer">
+            <a href="https://instagram.com/Elka_0624_" target="_blank">
+                <FiInstagram className='icon'/>
+            </a>
+            <a href="https://t.me/Elka_0624" target="_blank">
+                <FaTelegramPlane className='icon'/>
+            </a>
+            <a href="tel: +998905161865" target="_blank">
+                <AiOutlinePhone className='icon'/>
+            </a>
+        </div>
     </div>
 )
 }
