@@ -31,7 +31,7 @@
 }
 
 /* media 320 */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .logo {
         max-width: 80px;
         width: 100%;
